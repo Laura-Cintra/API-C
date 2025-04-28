@@ -5,8 +5,8 @@ namespace TDSPK.API.Infrastructure.Persistence
 {
     public class User : Audit
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+        public Guid Id { get; private set; }
+        public string Name { get; private set; }
 
         // 1..N - um usuário tem 1 ou mais fotos
         public readonly List<Photo> _photos = new();

@@ -12,5 +12,6 @@ namespace TDSPK.API.Infrastructure.Contexts
         {
             modelBuilder.ApplyConfiguration(new PhotoMapping());
         }
+        public DbSet<TDSPK.API.Infrastructure.Persistence.User> User { get; set; } = default!;
     }
 }
